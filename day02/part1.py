@@ -1,5 +1,5 @@
-file1 = open('input.txt', 'r')
-lines = file1.readlines()
+f = open('input.txt', 'r')
+lines = f.readlines()
 
 decode = { 'A' : 'Rock', 'B': 'Paper', 'C': 'Scissors', 'X' : 'Rock', 'Y': 'Paper', 'Z': 'Scissors' }
 shape_points = { 'Rock': 1, 'Paper': 2, 'Scissors': 3 }

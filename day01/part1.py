@@ -1,9 +1,9 @@
-file1 = open('input.txt', 'r')
-Lines = file1.readlines()
+f = open('input.txt', 'r')
+lines = f.readlines()
 
 max_cal = 0
 cals = 0
-for line in Lines:
+for line in lines:
   line = line.strip()
   if len(line) == 0:
     if cals > max_cal:

@@ -1,5 +1,5 @@
-file1 = open('input.txt', 'r')
-Lines = file1.readlines()
+f = open('input.txt', 'r')
+lines = f.readlines()
 
 def proc_cal(curr_maxs, calories):
   pos = 3
@@ -14,7 +14,7 @@ def proc_cal(curr_maxs, calories):
 
 cals = 0
 top3 = [0, 0, 0]
-for line in Lines:
+for line in lines:
   line = line.strip()
   if len(line) == 0:
     top3 = proc_cal(top3, cals)

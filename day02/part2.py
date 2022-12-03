@@ -1,5 +1,5 @@
-file1 = open('input.txt', 'r')
-lines = file1.readlines()
+f = open('input.txt', 'r')
+lines = f.readlines()
 
 decode_oponent = { 'A' : 'Rock', 'B': 'Paper', 'C': 'Scissors'}
 decode_result = {'X' : 'Lost', 'Y': 'Draw', 'Z': 'Win' }
