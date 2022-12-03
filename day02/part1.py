@@ -24,5 +24,4 @@ for line in lines:
   total_score += score
   print(oponent, myself, result, score)
 
-print(total_score)
-
+print("Answer is:", total_score)

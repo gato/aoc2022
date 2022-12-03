@@ -14,4 +14,4 @@ for line in lines:
 if cals > max_cal:
   max_cal = cals
 
-print("Max calories: ", max_cal)
+print("Answer is:", max_cal)

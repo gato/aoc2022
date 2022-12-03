@@ -33,3 +33,5 @@ for line in lines:
     acc += prio
     print(group, " -> ", b, prio, acc)
     group = []
+
+print("Answer is:", acc)

@@ -26,3 +26,5 @@ for line in lines:
   prio = getPriority(dup)
   acc += prio
   print(len(line), line, " -> ", dup, prio, acc)
+
+print("Answer is:", acc)

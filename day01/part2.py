@@ -23,3 +23,4 @@ for line in lines:
     cals += int(line)
 top3 = proc_cal(top3, cals)
 print("Max calories: ", top3, sum(top3))
+print("Answer is:", sum(top3))
