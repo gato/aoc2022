@@ -1,4 +1,4 @@
-file1 = open('aoc_day2.txt', 'r')
+file1 = open('input.txt', 'r')
 lines = file1.readlines()
 
 decode = { 'A' : 'Rock', 'B': 'Paper', 'C': 'Scissors', 'X' : 'Rock', 'Y': 'Paper', 'Z': 'Scissors' }

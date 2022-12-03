@@ -1,4 +1,4 @@
-file1 = open('aoc_input.txt', 'r')
+file1 = open('input.txt', 'r')
 Lines = file1.readlines()
 
 def proc_cal(curr_maxs, calories):

@@ -1,4 +1,4 @@
-file1 = open('aoc_day2.txt', 'r')
+file1 = open('input.txt', 'r')
 lines = file1.readlines()
 
 decode_oponent = { 'A' : 'Rock', 'B': 'Paper', 'C': 'Scissors'}
