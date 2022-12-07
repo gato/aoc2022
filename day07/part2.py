@@ -28,17 +28,20 @@ class FileTree:
     else:
       self.ls()
 
-  def find_dirs(self, name, curr_dir, found):
+  def find_dirs(self, name, curr_dir):
     size=0
+    found = []
     for k in curr_dir.keys():
       if type(curr_dir[k]) is dict:
-        size += self.find_dirs(k, curr_dir[k], found)
+        (s, f) = self.find_dirs(k, curr_dir[k])
+        size += s
+        found = found + f
       else:
         size += curr_dir[k]
     if (size >= missing):
       t = (name, size)
       found.append(t)
-    return size
+    return (size, found)
 
   def add_file(self, filename, size):
     curr_dir = self.root
@@ -59,7 +62,7 @@ for line in lines:
   else:
     ft.add_file(parts[1], int(parts[0]))
 found = []
-smallest = ft.find_dirs("/", ft.root, found)
+(smallest, found) = ft.find_dirs("/", ft.root)
 for t in found:
   smallest = min(smallest, t[1])
 print("Answer is:", smallest)
