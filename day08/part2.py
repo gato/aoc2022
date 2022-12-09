@@ -4,7 +4,6 @@ lines = list(map(lambda x: x.strip(), f.readlines()))
 w = len(lines)
 h = len(lines[0])
 
-
 def view_score(i, j):
   tree = lines[j][i]
   view_score = 1
